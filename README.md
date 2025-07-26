@@ -1,2 +1,21 @@
-# mnist_digit_classifier_model.h5
-The MNIST digit classifier is a deep learning model that recognizes handwritten digits (0–9) from 28x28 grayscale images. Using a Convolutional Neural Network (CNN), it learns features like edges and shapes, and classifies digits via a softmax output. It's widely used to teach image processing and neural network basics.
+# MNIST Digit Classifier
+
+A simple image classifier built using a Convolutional Neural Network (CNN) to recognize handwritten digits from the MNIST dataset.
+
+## Dataset
+- Source: MNIST (70,000 grayscale images, 28x28 pixels)
+- Classes: Digits 0–9
+
+## Model
+- Architecture: CNN with Conv2D, MaxPooling, Dense, Dropout
+- Output Layer: Softmax (10 classes)
+- Accuracy: ~98%
+
+## Installation & Setup
+```bash
+git clone https://github.com/YaqoobOmar/image_projects.git
+cd image_projects
+python -m venv venv
+source venv/Scripts/activate  # Use `source venv/bin/activate` on Linux/Mac
+pip install -r requirements.txt
+jupyter notebook
